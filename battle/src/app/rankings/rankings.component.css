@@ -1,0 +1,15 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+img{
+    width: 15%;
+}
+h1, h2{
+    display: inline;
+    vertical-align: top;
+}
+#wrapper{
+    height: 560px;
+    overflow: scroll;
+}

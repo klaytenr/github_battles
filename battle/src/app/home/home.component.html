@@ -1,0 +1,36 @@
+<div id="wrapper">
+  <div class="player">
+    <h2>Player 1</h2>
+    <div *ngIf='player1Value == false'>
+      <form (submit)='addNewPlayer1()'>
+        {{ player1 | json }} <br>
+        Github Username: <input type="text" name="username" [(ngModel)]='player1.username'><br>
+        <input type="submit" value="Get User">
+      </form>
+    </div>
+    <div *ngIf='player1Value == true'>
+      <img src="{{ player1.image }}" alt="player1 picture">
+      <h3>{{ player1.username }}</h3>
+    </div>
+  </div>
+  <div class="player">
+    <h2>Player 2</h2>
+    <div *ngIf='player2Value == false'>
+      <form (submit)='addNewPlayer2()'>
+        {{ player2 | json }} <br>
+        Github Username: <input type="text" name="username" [(ngModel)]='player2.username'><br>
+        <input type="submit" value="Get User">
+      </form>
+    </div>
+    <div *ngIf='player2Value == true'>
+        <img src="{{ player2.image }}" alt="player2 picture">
+        <h3>{{ player2.username }}</h3>
+      </div>
+  </div>
+  <div *ngIf='player2Value == true && player1Value == true'>
+    <button id="battle" [routerLink]="['/results']">Battle</button>
+  </div>
+</div>
+
+
+<!-- 7bc5af2f30cc83784b92354cb0e159091bc37c9b -->

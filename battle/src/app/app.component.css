@@ -1,0 +1,19 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+h1{
+    display: inline-block;
+    margin: 0 500px 0 10px;
+}
+button{
+    display: inline-block;
+    padding: 5px;
+    font-size: 15px;
+}
+#wrapper{
+    text-align: center;
+    border: 2px solid blue;
+    width: 1000px;
+    height: 600px;
+}

@@ -1,0 +1,14 @@
+<div id="wrapper">
+  <div *ngIf='loser'>
+    <h1 class = 'green'>1st Place</h1>
+    <h3 class = 'green'>{{ winner1.username}} (Score: {{winner1.score}})</h3>
+    <h1 class = 'red'>2nd Place</h1>
+    <h3 class = 'red'>{{ loser.username}} (Score: {{loser.score}})</h3>
+  </div>
+  <div *ngIf='winner2'>
+    <h1>It was a Tie!</h1>
+    <h3 class = 'green'>{{ winner1.username}} (Score: {{winner1.score}})</h3>
+    <h3 class = 'green'>{{ winner2.username}} (Score: {{winner2.score}})</h3>
+  </div>
+  <button [routerLink]="['/home']">Reset</button>
+</div>

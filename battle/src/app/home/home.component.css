@@ -1,0 +1,16 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+.player{
+    display: inline-block;
+    border: 2px seagreen dashed;
+    width: 49%;
+}
+#battle{
+    width: 100%;
+    background-color: orange;
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 10px 0;
+}
